@@ -84,6 +84,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+  }
+  
+  figure img {
+    max-width: 100%;
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}
+
 h1 {
   font-size: var(--hyper-5);
 }
