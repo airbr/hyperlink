@@ -88,20 +88,44 @@ h1 {
   font-size: var(--hyper-5);
 }
 
-h2 {
-  font-size: var(--hyper-2);
+h2, p {
+  font-size: var(--hyper-1);
 }
 
-.mono-font {
+.mono-font, code {
+  font-size: var(--hyper-1);
   font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
 }
 
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 25px;
   /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;  */
   font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
+main {
+  max-width: 900px;
+}
+
+.hyperlink-icon {
+  max-width: 80px;
+}
+
+section {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 :root {
   --hyper--2: clamp(0.7813rem, 0.752rem + 0.1463vw, 0.88rem);
@@ -136,6 +160,8 @@ body {
   /* Custom pairs */
   --space-s-l: clamp(1.125rem, 0.6435rem + 2.4074vw, 2.75rem);
 }
+
+
 
 /* ==========================================================================
    Helper classes
